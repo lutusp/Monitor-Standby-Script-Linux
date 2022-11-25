@@ -1,7 +1,7 @@
 [Desktop Entry]
 Type=Application
-Name=Launch Login Setup Script
-Comment=Run display blanking script for pl-alpha issue
+Name=Launch Monitor Standby Script
+Comment=Run display blanking script for multiple monitor issue
 Exec=(enter full path here)/mmds.sh
 StartupNotify=false
 Terminal=false
