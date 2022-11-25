@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Launch Login Setup Script
+Comment=Run display blanking script for pl-alpha issue
+Exec=/netbackup/data/Linux_system_related/notes/display_notes_scripts/dual_monitor_standby_fail_remedy/mmds.sh
+StartupNotify=false
+Terminal=false
+Name[en_IE]=mmds_launcher
