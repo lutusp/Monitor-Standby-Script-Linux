@@ -2,6 +2,8 @@
 
 This Bash shell script solves a longstanding uncorrected bug in current Linux distributions: HDMI-connected multi-monitor installs won't reliably sleep. This script takes over for the default desktop-environment monitor-standby facility and sleeps multiple monitors after a user-specified interval.
 
+UPDATE: The issue this project addresses is more easily remedied by preventing your monitors from auto-scanning for inputs after the primary input goes away. But not all monitors have this auto-scan disabling feature (HP monitors usually do). I recently got rid of some less well-designed monitors that couldn't be prevented from scanning for new inputs, which has the effect of forcing the video driver out of standby.
+
 The mmds.sh script can be placed anywhere. It's launched at login using mmds_launcher.desktop, which should be copied into $USER/.config/autostart. Edit MMDS_launcher.desktop to include the full path to mmds.sh.
 
 The script examines user activity and awakens the monitors on keyboard and/or mouse activity.
