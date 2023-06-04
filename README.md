@@ -28,3 +28,6 @@ To replace a running instance, simply run the script again with no arguments -- 
 Context: Until recently a kernel boot argument of "amdgpu.dc=0" would (a) disable HDMI sound but (b) allow multiple HDMI monitors to sleep, but after a recent update this approach stopped working, in fact the kernel boot process failed until the argument was removed. So I resurrected an old script and improved it, made it more reliable.
 
 The kernel devs have been made aware of this bug, but in conversations it seems HDMI driver issues have a low priority.
+
+Update 2023.06.03: After an epic struggle I gave up on this approach and replaced my original dual monitors with models (by HP) that can be prevented from scanning for other inputs if the HDMI input goes offline. That solved the issue.
+
